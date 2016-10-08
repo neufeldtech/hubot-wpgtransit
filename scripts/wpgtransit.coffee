@@ -3,11 +3,11 @@
 #
 # Configuration:
 #   HUBOT_WPGTRANSIT_KEY=ABCDEFGHIJKLMNOPXRSTUVWXYZ (Required)
-#   HUBOT_WPGTRANSIT_OFFSET_HOURS="-2" (Optional)
 #   HUBOT_WPGTRANSIT_URL=http://api.winnipegtransit.com/v2/ (Optional) 
 #
 # Dependencies:
 #   "moment": "^2.15.1"
+#   "moment-timezone": "^0.5.6"
 #
 # Notes:
 #  You can get an API key here: https://api.winnipegtransit.com/home/users/new
@@ -20,18 +20,16 @@
 # Author:
 #   Jordan Neufeld <myjc.niv@gmail.com>
 #
-moment = require('moment')
+moment = require('moment-timezone')
 stopsJSON = require('../data/bus_stops.json')
 api_url = process.env.WPG_OPENDATA_URL || "http://api.winnipegtransit.com/v2/"
 api_key = process.env.HUBOT_WPGTRANSIT_KEY 
-offset = process.env.HUBOT_WPGTRANSIT_OFFSET_HOURS || 0
 
 module.exports = (robot) ->
   getSchedule = (msg, cb) ->
-    now = new moment()
-    adjustedTime = now.add(offset, 'hours')
+    now = new moment().tz("America/Winnipeg")
     #futureTime is how far in advance we want to display schedule for
-    futureTime = adjustedTime.add('1.25','hours').format('HH:mm')
+    futureTime = now.add('1.25','hours').format('HH:mm')
     robot.logger.debug("#{api_url}stops/#{msg}/schedule.json?end=#{futureTime}&usage=long&max-results-per-route=4&api-key=#{api_key}")
     httprequest = robot.http("#{api_url}stops/#{msg}/schedule.json?end=#{futureTime}&usage=long&max-results-per-route=4&api-key=#{api_key}")
     httprequest.get() (err, res, body) ->

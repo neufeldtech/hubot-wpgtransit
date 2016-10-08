@@ -1,6 +1,6 @@
 {
     "name": "hubot-wpgtransit",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Hubot plugin to interface with Winnipeg Transit OpenData API",
     "main": "scripts/wpgtransit.coffee",
     "scripts": {},
@@ -24,6 +24,7 @@
     },
     "homepage": "https://github.com/neufeldtech/hubot-wpgtransit",
     "dependencies": {
-        "moment": "^2.15.1"
+        "moment": "^2.15.1",
+        "moment-timezone": "^0.5.6"
     }
 }

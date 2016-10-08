@@ -67,5 +67,4 @@ You may set the below environment variables for further configuration options
 | Environment variable | Required | Value | Notes |
 | -------- | ----- | ----- | ----- |
 | HUBOT_WPGTRANSIT_KEY | Required | (String) Winnipeg transit OpenData API Key | [Obtain a key here](https://api.winnipegtransit.com/home/users/new) |
-| HUBOT_WPGTRANSIT_OFFSET_HOURS | Optional | (Integer) Use this to adjust the script if your Server's timezone does not match that of Winnipeg (Optional) | Example: If your server is in Eastern Time, set this to `-1` 
 | HUBOT_WPGTRANSIT_URL | Optional | (URL) Default: http://api.winnipegtransit.com/v2/ | Should not need to set this unless the API URL changes|
