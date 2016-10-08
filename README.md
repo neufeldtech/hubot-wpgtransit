@@ -1,5 +1,6 @@
 hubot-wpgtransit
 ================
+[![npm version](https://badge.fury.io/js/hubot-wpgtransit.svg)](https://badge.fury.io/js/hubot-wpgtransit)
 
 Hubot plugin to get bus schedule information from the Winnipeg Transit Open Data API 
 
