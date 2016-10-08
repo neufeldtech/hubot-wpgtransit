@@ -1,29 +1,29 @@
 {
-  "name": "hubot-wpgtransit",
-  "version": "0.0.1",
-  "description": "Hubot plugin to interface with Winnipeg Transit OpenData API",
-  "main": "scripts/wpgtransit.coffee",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/neufeldtech/hubot-stache.git"
-  },
-  "keywords": [
-    "hubot",
-    "hubot-scripts",
-    "hubot-wpgtransit",
-    "winnipeg",
-    "transit",
-    "bus",
-    "schedule"
-  ],
-  "author": "Jordan Neufeld <myjc.niv@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/neufeldtech/hubot-wpgtransit/issues"
-  },
-  "homepage": "https://github.com/neufeldtech/hubot-wpgtransit",
-  "dependencies": {
-    "moment": "^2.15.1"
-  }
+    "name": "hubot-wpgtransit",
+    "version": "0.0.2",
+    "description": "Hubot plugin to interface with Winnipeg Transit OpenData API",
+    "main": "scripts/wpgtransit.coffee",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/neufeldtech/hubot-stache.git"
+    },
+    "keywords": [
+        "hubot",
+        "hubot-scripts",
+        "hubot-wpgtransit",
+        "winnipeg",
+        "transit",
+        "bus",
+        "schedule"
+    ],
+    "author": "Jordan Neufeld <myjc.niv@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/neufeldtech/hubot-wpgtransit/issues"
+    },
+    "homepage": "https://github.com/neufeldtech/hubot-wpgtransit",
+    "dependencies": {
+        "moment": "^2.15.1"
+    }
 }

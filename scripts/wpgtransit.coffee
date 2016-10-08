@@ -22,8 +22,8 @@
 #
 moment = require('moment')
 stopsJSON = require('../data/bus_stops.json')
-api_url = process.env.WPG_OPENDATA_URL
-api_key = process.env.HUBOT_WPGTRANSIT_KEY || "http://api.winnipegtransit.com/v2/"
+api_url = process.env.WPG_OPENDATA_URL || "http://api.winnipegtransit.com/v2/"
+api_key = process.env.HUBOT_WPGTRANSIT_KEY 
 offset = process.env.HUBOT_WPGTRANSIT_OFFSET_HOURS || 0
 
 module.exports = (robot) ->
