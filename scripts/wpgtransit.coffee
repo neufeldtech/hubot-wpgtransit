@@ -10,12 +10,12 @@
 #   "moment-timezone": "^0.5.6"
 #
 # Notes:
-#  You can get an API key here: https://api.winnipegtransit.com/home/users/new
+#   You can get an API key here: https://api.winnipegtransit.com/home/users/new
 #
 # Commands:
-#  hubot bus search <query> - Search for a stop number
-#  hubot bus schedule - Display current bus schedule for the last bus stop that you viewed
-#  hubot bus schedule <stop number> - Display current bus schedule for specified stop
+#   hubot bus search <query> - Search for a stop number
+#   hubot bus schedule - Display current bus schedule for the last bus stop that you viewed
+#   hubot bus schedule <stop number> - Display current bus schedule for specified stop
 #
 # Author:
 #   Jordan Neufeld <myjc.niv@gmail.com>
