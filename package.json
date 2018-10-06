@@ -1,6 +1,6 @@
 {
     "name": "hubot-wpgtransit",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Hubot plugin to interface with Winnipeg Transit OpenData API",
     "main": "index.coffee",
     "scripts": {},

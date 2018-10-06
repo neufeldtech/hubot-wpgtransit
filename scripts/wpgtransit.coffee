@@ -3,7 +3,7 @@
 #
 # Configuration:
 #   HUBOT_WPGTRANSIT_KEY=ABCDEFGHIJKLMNOPXRSTUVWXYZ (Required)
-#   HUBOT_WPGTRANSIT_URL=http://api.winnipegtransit.com/v2/ (Optional) 
+#   HUBOT_WPGTRANSIT_URL=https://api.winnipegtransit.com/v2/ (Optional) 
 #
 # Dependencies:
 #   "moment": "^2.15.1"
@@ -22,7 +22,7 @@
 #
 moment = require('moment-timezone')
 stopsJSON = require('../data/bus_stops.json')
-api_url = process.env.WPG_OPENDATA_URL || "http://api.winnipegtransit.com/v2/"
+api_url = process.env.WPG_OPENDATA_URL || "https://api.winnipegtransit.com/v2/"
 api_key = process.env.HUBOT_WPGTRANSIT_KEY 
 
 module.exports = (robot) ->

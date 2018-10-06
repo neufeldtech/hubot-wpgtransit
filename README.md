@@ -68,4 +68,4 @@ You may set the below environment variables for further configuration options
 | Environment variable | Required | Value | Notes |
 | -------- | ----- | ----- | ----- |
 | HUBOT_WPGTRANSIT_KEY | Required | (String) Winnipeg transit OpenData API Key | [Obtain a key here](https://api.winnipegtransit.com/home/users/new) |
-| HUBOT_WPGTRANSIT_URL | Optional | (URL) Default: http://api.winnipegtransit.com/v2/ | Should not need to set this unless the API URL changes|
+| HUBOT_WPGTRANSIT_URL | Optional | (URL) Default: https://api.winnipegtransit.com/v2/ | Should not need to set this unless the API URL changes|
